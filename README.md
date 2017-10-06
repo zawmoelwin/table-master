@@ -8,6 +8,8 @@ One of my friend said, he has a table of table_names that has specific relation 
 
 Or if you are creating multi-tenant application, you can create a group of tables on creating a new user and still able to access these tables with the Model class created on the fly.
 
+It is not completed yet so you might not be able to use it as a gem. Any new idea is welcomed and feel free to take a look at the code in the lib folder. 
+
 
 
 
@@ -29,7 +31,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+createClass accept const and a Model class, and create a new class with const and it inherit the relationships and table_name of the 
 
 
 ## Contributing
