@@ -5,8 +5,7 @@ module TableMaster
     class CreateClass
         @table
         @name
-        @model
-        
+
         def createClass(name , model) 
             @name = Object.const_set(name, Class.new(model))
         end
@@ -15,8 +14,6 @@ module TableMaster
             @table = my_table
             sql = "CREATE TABLE #{my_table} (#{data_struct})"
             ActiveRecord::Base.connection.execute(sql)
-              ActiveRecord::Base.connection.create_table
-            
         end
 
         def setTable(my_table)
